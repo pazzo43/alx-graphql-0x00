@@ -109,3 +109,112 @@ Variables example:
 {
   "id": 1
 }
+
+
+##### One Query Per Page (Page 1–4)
+query {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query {
+  characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query {
+  characters(page: 3) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query {
+  characters(page: 4) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+##### Multiple Named Queries in a Single File
+query CharactersPage1 {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage2 {
+  characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage3 {
+  characters(page: 3) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage4 {
+  characters(page: 4) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+##### Professional Version Using Variables
+query GetCharacters($page: Int) {
+  characters(page: $page) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+Variables example:
+{
+  "page": 1
+}
+
