@@ -1,1 +1,109 @@
+query {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query {
+  characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+
+query {
+  characters(page: 3) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+
+query {
+  characters(page: 4) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+
+query CharactersPage1 {
+  characters(page: 1) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage2 {
+  characters(page: 2) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage3 {
+  characters(page: 3) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+query CharactersPage4 {
+  characters(page: 4) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+
+query GetCharacters($page: Int) {
+  characters(page: $page) {
+    results {
+      id
+      name
+      status
+      image
+    }
+  }
+}
+
+
+{
+  "page": 1
+}
+
 
