@@ -1,1 +1,61 @@
+query {
+  episode(id: 1) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+
+query {
+  episode(id: 5) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+
+query Episode1 {
+  episode(id: 1) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+query Episode2 {
+  episode(id: 2) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+query Episode3 {
+  episode(id: 3) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+
+query GetEpisode($id: ID!) {
+  episode(id: $id) {
+    id
+    name
+    air_date
+    episode
+  }
+}
+
+{
+  "id": 1
+}
 
